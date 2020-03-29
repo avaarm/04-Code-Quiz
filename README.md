@@ -31,7 +31,6 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 
-**NOTE: Do not use jQuery! Please use plain, vanilla Javascript for this**
 
 The following animation demonstrates the application functionality:
 
