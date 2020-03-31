@@ -12,10 +12,14 @@ AS A coding bootcamp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 ```
+<<<<<<< HEAD
 Notes from Chris
 an array of of objects 
     - (need to make buttons)
     - with questions, keep repeating the process until we are out of questions
+=======
+
+>>>>>>> f95edf1821dad0605d9566f62e6ef376a16c5c5e
 
 
 ## Acceptance Criteria
@@ -34,7 +38,10 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 
+<<<<<<< HEAD
 **NOTE: Do not use jQuery! Please use plain, vanilla Javascript for this**
+=======
+>>>>>>> f95edf1821dad0605d9566f62e6ef376a16c5c5e
 
 The following animation demonstrates the application functionality:
 
@@ -57,4 +64,8 @@ You are required to submit the following for review:
 
 ---
 
+<<<<<<< HEAD
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> f95edf1821dad0605d9566f62e6ef376a16c5c5e
