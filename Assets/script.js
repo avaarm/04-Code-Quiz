@@ -44,7 +44,7 @@ function timer() {
 // Set an array as a variable that includes questions, answers, and correct answers:
 var arrayofQuestions = [
   {
-    question: "Question 1: Commonly used data types DO NOT include:",
+    question: "Commonly used data types DO NOT include:",
     answers: [
       "a. strings",
       "b. booleans",
@@ -55,7 +55,7 @@ var arrayofQuestions = [
   },
   {
     question:
-      "Question 2: The condition of an if / else statement is enclosed within ________",
+      "The condition of an if / else statement is enclosed within ________",
     answers: [
       "a. quotes",
       "b. curly brackets",
@@ -65,7 +65,7 @@ var arrayofQuestions = [
     rightAnswer: "c. parentheses"
   },
   {
-    question: "Question 3: Arrays in JavaScript can be used to store ________",
+    question: "Arrays in JavaScript can be used to store ________",
     answers: [
       "a. numbers and strings",
       "b. other arrays",
@@ -76,13 +76,13 @@ var arrayofQuestions = [
   },
   {
     question:
-      "Question 4: String values must be enclosed within ________ when being assigned to variables.",
+      "String values must be enclosed within ________ when being assigned to variables.",
     answers: ["a. commas", "b. curly brackets", "c. quotes", "d. parentheses"], //correct
     rightAnswer: "d. parentheses"
   },
   {
     question:
-      "Question 5: A very useful tool used during development and debugging for printing content to the debugger is:",
+      "A very useful tool used during development and debugging for printing content to the debugger is:",
     answers: [
       "a. JavaScript",
       "b. terminal/bash",
@@ -129,13 +129,12 @@ function correctAnswer() {
 
 function enterScore() {
   container.innerHTML = "<h2>All Done!</h2><br>";
-  buttons.innerHTML = "Your final score is " + score + "." + "<br><br>";
+  buttons.innerHTML = "Final score  " + score + "." + "<br><br>";
     var form = document.createElement("form");
     submit.appendChild(form);
     innerHTML = enterInitials;
     var initialsButton = document.querySelector(".initialButton");
   initialsButton.addEventListener("click", function(event) {
-
     event.preventDefault(); 
     if (localStorage.getItem("user,score") !== null) {
       scores = JSON.parse(localStorage.getItem("user,score"));
@@ -154,29 +153,25 @@ function enterScore() {
     save.push(userScore);
 
     localStorage.setItem("user,score", JSON.stringify(save));
-
     viewScore();
   });
 }
 
 function viewScore() {
   container.innerHTML = "<h2>High Scores!</h2><br>";
-  for (var t = 0; t < save.length; t++) {
+  for (var a = 0; a < save.length; a++) {
     var scoreList = document.createElement("div");
     scoreList.textContent =
       "Usser: " +
-      save[t].userInitials +
-      "-----------------" +
+      save[a].userInitials +
+      "----------------" +
       "   Score: " +
-      save[t].score;
+      save[a].score;
     container.appendChild(scoreList);
   }
   buttons.innerHTML = "<button type='button' class='btn btn-primary'>" + "Clear Scores" +
   "</button>";
   form.innerHTML = "<div></div>";
 }
-
-
-
 startQuiz();
 
