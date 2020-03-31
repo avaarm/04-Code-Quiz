@@ -1,0 +1,39 @@
+.highScoresLink {
+    color: darkmagenta;
+
+}
+.buttons {
+    color: darkmagenta;
+    border-color: darkviolet;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+    width: 40%;
+    
+}
+
+.answer {
+    color: darkviolet;
+}
+
+header {
+    padding: 5px 5px 60px 5px;
+}
+.timer {
+    float: right;
+}
+
+
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.questionStyle {
+    
+    background: #ffffff;
+    text-align: center;
+    padding-top: 5px;
+}
